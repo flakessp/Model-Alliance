@@ -1,6 +1,35 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
-
-body{
+body {
   font-family: Roboto;
   background-color: #6b7dbc;
+  color: white;
+}
+.body__wrapper {
+  width: 1141px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header__heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.heading__logo {
+  margin-bottom: 12px;
+}
+.header__p {
+  font-weight: 400;
+  max-width: 400px;
+  margin: 0 auto 50px auto;
+}
+.list__item {
+  display: inline-block;
+  margin-right: 115px;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.list__item:last-child {
+  margin-right: 0;
+}
+.wrapper__maincontent {
+  margin-top: 50px;
 }
