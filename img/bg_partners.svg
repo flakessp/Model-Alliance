@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="992px" height="1024px" viewBox="0 0 992 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle 1 + Rectangle 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-448.000000, 0.000000)" fill="#4D519D">
+            <g id="Triangle-1-+-Rectangle-1" sketch:type="MSLayerGroup" transform="translate(448.000000, -94.000000)">
+                <path d="M493.255814,94 L455,0 L0,1118 L669,1118 L992,1118 L992,94 L493.255814,94 Z" id="Triangle-1" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
