@@ -55,7 +55,7 @@ header {
   background: linear-gradient(109deg, rgba(77, 81, 158, 0) 33%, rgba(77, 81, 158, 0.9) 33%, rgba(77, 81, 158, 0.9) 100%);
   /* W3C */
 }
-.wrapper__model {
+.wrapper__models {
   z-index: -1;
   position: absolute;
   display: none;

@@ -20,7 +20,7 @@
       <p class="header__p">Mobile application for models from around the world, helping them in their work and daily life.</p>
       <nav class="header__nav">
         <ul class="nav__list">
-          <li class="list__item"><a id="link__model" href="">MODEL</a></li>
+          <li class="list__item"><a id="link__models" href="">MODEL</a></li>
           <li class="list__item"><a id="link__partners" href="">PARTNERS</a></li>
         </ul>
       </nav>
@@ -30,23 +30,48 @@
     </section>
     <section class="wrapper__partners">
     </section>
-    <section class="wrapper__model">
+    <section class="wrapper__models">
     </section>
   </div>
   <script>
-    var link__model = $("#link__model");
-    var link__partners = $("#link__partners");
-    link__model.click(function(e) {
+    var link = {
+      models: {
+        $: $("#link__models"),
+        toggled: false
+      },
+      partners: {
+        $: $("#link__partners"),
+        toggled: false
+      }
+    };
+    link.models.$.click(function(e) {
       e.preventDefault();
-      $('.wrapper__model').animate({
+      if(link.partners.toggled){
+        $('.wrapper__partners').animate({
+          'width': 'toggle'
+        });
+        link.partners.toggled = !link.partners.toggled;
+        }
+      $('.wrapper__models').animate({
         'width': 'toggle'
       });
+      link.models.toggled = !link.models.toggled;
+      console.log(link.models.toggled, link.partners.toggled)
     });
-    link__partners.click(function(e) {
+    link.partners.$.click(function(e) {
       e.preventDefault();
+      if(link.models.toggled){
+        $('.wrapper__models').animate({
+          'width': 'toggle'
+        });
+        link.models.toggled = !link.models.toggled;
+        }
       $('.wrapper__partners').animate({
         'width': 'toggle'
       });
+      link.partners.toggled = !link.partners.toggled;
+      console.log(link.models.toggled, link.partners.toggled)
+
     });
   </script>
 </body>
