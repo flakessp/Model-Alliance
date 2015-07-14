@@ -29,8 +29,18 @@
       <img src="img/sphere.png" alt="">
     </section>
     <section class="wrapper__partners">
+      <div class="partners__wrapper">
+        <h1 class="wrapper__h1">PRODUCTIVITY PARTNERSHIP</h1>
+        <p class="wrapper__p">Information for partners Model Alliance</p>
+        <button class="wrapper__button">Learn all</button>
+      </div>
     </section>
     <section class="wrapper__models">
+      <div class="models__wrapper">
+        <h1 class="wrapper__h1">BE IN TREND</h1>
+        <p class="wrapper__p">More information about the application</p>
+        <button class="wrapper__button">Learn all</button>
+      </div>
     </section>
   </div>
   <script>
@@ -42,7 +52,7 @@
       this.wrapper = controledWrapper;
       this.toggled = false;
       this.animate = function() {
-        this.wrapper.animate(this.toggleOptions);
+        this.wrapper.animate(this.toggleOptions,700);
         this.toggle();
       };
       this.toggle = function() {
