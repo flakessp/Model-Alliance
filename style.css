@@ -37,19 +37,10 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  width: 40%;
+  width: 60%;
   height: 100%;
-  background-color: rgba(77, 81, 158, 0.9);
+  background: url(img/bg_partners.png) no-repeat  center;
+  background-size: cover;
 }
 .wrapper__partners:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top:0;
-    left: -300px;
-    width:0;
-    height:0;
-    border:150px solid rgba(255, 255, 255, 0);
-    border-right:150px solid rgba(77, 81, 158, 0.9);
-    border-bottom:150px solid  rgba(77, 81, 158, 0.9);
 }
