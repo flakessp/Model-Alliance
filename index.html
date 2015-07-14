@@ -34,44 +34,44 @@
     </section>
   </div>
   <script>
+  var toggleOptions = {'width': 'toggle'};
     var link = {
       models: {
         $: $("#link__models"),
-        toggled: false
+        toggled: false,
+        wrapper: $('.wrapper__models'),
+        animate: function(){
+          this.wrapper.animate(toggleOptions);
+          this.toggle();
+        },
+        toggle: function(){
+          this.toggled = !this.toggled;
+        }
       },
       partners: {
         $: $("#link__partners"),
-        toggled: false
+        toggled: false,
+        wrapper: $('.wrapper__partners'),
+        animate: function(){
+          this.wrapper.animate(toggleOptions);
+          this.toggle();
+        },
+        toggle: function(){
+          this.toggled = !this.toggled;
+        }
       }
     };
     link.models.$.click(function(e) {
       e.preventDefault();
-      if(link.partners.toggled){
-        $('.wrapper__partners').animate({
-          'width': 'toggle'
-        });
-        link.partners.toggled = !link.partners.toggled;
-        }
-      $('.wrapper__models').animate({
-        'width': 'toggle'
-      });
-      link.models.toggled = !link.models.toggled;
-      console.log(link.models.toggled, link.partners.toggled)
+      if(link.partners.toggled)
+        link.partners.animate();
+      link.models.animate();
     });
     link.partners.$.click(function(e) {
       e.preventDefault();
-      if(link.models.toggled){
-        $('.wrapper__models').animate({
-          'width': 'toggle'
-        });
-        link.models.toggled = !link.models.toggled;
-        }
-      $('.wrapper__partners').animate({
-        'width': 'toggle'
-      });
-      link.partners.toggled = !link.partners.toggled;
-      console.log(link.models.toggled, link.partners.toggled)
-
+      if(link.models.toggled)
+        link.models.animate();
+      link.partners.animate();
     });
   </script>
 </body>
