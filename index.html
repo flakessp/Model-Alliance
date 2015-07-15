@@ -71,6 +71,8 @@
         return that.wrapper.css(wrapperPosition);
       }
     };
+    var startMargin = $('.wrapper__partners').css('width');
+    $('.wrapper__partners').css('right',-startMargin);
 
     var models = new controlPanel($("#link__models"), $('.wrapper__models'),"left");
     var partners = new controlPanel($("#link__partners"), $('.wrapper__partners'),"right");
