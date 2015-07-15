@@ -1,17 +1,96 @@
 /* TYPOGRAPHY */
+
 @import url(http://fonts.googleapis.com/css?family=Questrial|Roboto:400,700,300);
-body{
+body {
   font-family: roboto;
 }
-h1{
+.body__wrapper{
+  width: 1060px;
+  margin: 0 auto;
+  position: relative;
+}
+header{
+  height: 130px;
+}
+h1 {
   font-size: 60px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 10px;
 }
-p{
+p {
   font-family: questrial;
   font-size: 12px;
+  color: #1d1d1f;
+  letter-spacing: 0.6px;
 }
-p.lead{
+button{
+  color: #8d5fc5;
+  border: 2px #8d5fc5 solid;
+  letter-spacing: 2.8px;
+  font-size: 10px;
+  width: 240px;
+  height: 50px;
+  font-weight: 600;
+}
+.model__slide {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+}
+p.lead {
   font-size: 14px;
+  line-height: 24px;
+}
+
+
+.slide__content ul li {
+  display: inline-block;
+  margin-right: 55px;
+}
+.slide__content ul li:last-child{
+  margin-right: 0;
+}
+.list__image{
+  margin-bottom: 15px;
+}
+
+.list__p{
+  max-width: 110px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.slide__header{
+  margin-bottom: 100px;
+}
+.content__p {
+  max-width: 440px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.lead__second{
+  max-width: none;
+  margin-bottom: 25px;
+}
+.content__list{
+  margin-bottom: 65px;
+}
+.button__about{
+  color: #acacac;
+  margin-top: 16px;
+}
+
+.navigation__list{
+  position: absolute;
+  top: 50%;
+  margin-top: -68px;
+}
+.navigation__list li{
+  color:#8d5fc5;
+  font-size: 12px;
+  margin-bottom: 50px;
+  letter-spacing: 2.8px;
+}
+.navigation__list li:last-child{
+  margin-bottom: 0;
 }
