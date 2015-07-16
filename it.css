@@ -9,8 +9,27 @@ body {
   margin: 0 auto;
   position: relative;
 }
-header{
-  height: 130px;
+nav{
+  float: left;
+  padding-left: 30px;
+  margin-top: 260px;
+  margin-right: 100px;
+}
+.slides__wrapper{
+  float: left;
+  height: 710px;
+  overflow: hidden;
+}
+.slides__wrapper__model{
+  overflow: auto;
+  height: 100%;
+  padding-right: 15px;
+  width: 100%;
+}
+.header__logobar{
+  margin-top: 40px;
+  padding-left: 30px;
+  margin-bottom: 50px;
 }
 h1 {
   font-size: 60px;
@@ -81,9 +100,6 @@ p.lead {
 }
 
 .navigation__list{
-  position: absolute;
-  top: 50%;
-  margin-top: -68px;
 }
 .navigation__list li{
   color:#8d5fc5;
